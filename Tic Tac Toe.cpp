@@ -113,8 +113,18 @@ int main()
 	char c1,c2;
 	//Assign the character to the players
 	cout<<"Choose X or 0 :"<<endl;
+	z:
 	cout<<"Player1 choose:";
 	cin>>c1;
+	if(c1=='X'|| c1=='0')
+	{
+		c1;
+	}
+	else
+	{
+		cout<<"Invalid, please choose X or 0"<<endl;
+		goto z;
+	}
 	c2=c1=='X'?'0':'X';
 	cout<<"Player2 you will get "<<c2<<""<<endl<<endl<<endl;
 	
